@@ -1,0 +1,51 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve",
+    "paths": {
+      "@acme/video-angular": [
+        "./dist/video-angular"
+      ],
+      "@acme/video-core": [
+        "./dist/video-core"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "typeCheckHostBindings": true,
+    "strictTemplates": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/video-core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/video-core/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/video-angular/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/video-angular/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/video-elements/tsconfig.app.json"
+    }
+  ]
+}
